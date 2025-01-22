@@ -285,7 +285,7 @@ class ReviewAnalyzer:
             low_rated.sort_values("sentiment_score")["Yorum"].head(2).tolist()
         )
 
-        summary_prompt = f"""Bu ürünün genel değerlendirmesini doğal bir dille özetleyeceksin.
+        summary_prompt = f"""Bu ürünün genel değerlendirmesini doğal bir dille özetleyeceksin ama tavsiyede bulunmayacaksın.
 
 Veriler:
 - Toplam {len(df)} değerlendirme var
